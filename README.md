@@ -17,22 +17,22 @@
 # Installation
 ## apache
 ```apache
-    ErrorDocument 401 /401.html;
-    ErrorDocument 403 /403.html;
-    ErrorDocument 404 /404.html;
-    ErrorDocument 500 /500.html;
-    ErrorDocument 502 /502.html;
+ErrorDocument 401 /401.html;
+ErrorDocument 403 /403.html;
+ErrorDocument 404 /404.html;
+ErrorDocument 500 /500.html;
+ErrorDocument 502 /502.html;
 ```
 ## nginx
 ```nginx
-    error_page 401 /401.html;
-    error_page 403 /403.html;
-    error_page 404 /404.html;
-    error_page 500 /500.html;
-    error_page 502 /502.html;
-    location = /error/404.html {
-        internal; # 直接访问/error/404.html时仍可返回404状态码，用于搭配Wordpress 404页重定向，详见http://nginx.org/en/docs/http/ngx_http_core_module.html#internal
-    }
+error_page 401 /401.html;
+error_page 403 /403.html;
+error_page 404 /404.html;
+error_page 500 /500.html;
+error_page 502 /502.html;
+location = /error/404.html {
+    internal; # 直接访问/error/404.html时仍可返回404状态码，用于搭配Wordpress 404页重定向，详见http://nginx.org/en/docs/http/ngx_http_core_module.html#internal
+}
 ```
 ## Wordpress
 如果你使用Wordpress且url位于域名根目录，所有请求都会转发给WP的index.php处理从而由WP主题而非webserver返回404页
