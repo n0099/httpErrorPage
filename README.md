@@ -1,6 +1,8 @@
 # httpErrorPage
 ![](https://img.shields.io/github/languages/code-size/n0099/httpErrorPage.svg)
 ![](https://img.shields.io/github/license/n0099/httpErrorPage.svg)
+![](https://img.shields.io/github/downloads/n0099/httpErrorPage/total.svg)
+![](https://raw.githubusercontent.com/n0099/httpErrorPage/master/404.gif)
 
 基于[Hacker themed error page](https://codepen.io/robinselmer/pen/vJjbOZ)修改而来的自定义HTTP错误页
 支持以下状态码：
