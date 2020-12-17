@@ -36,7 +36,7 @@ error_page 502 /502.html;
 因此请修改`wp-content\themes\当前使用主题名\404.php`内容为
 ```php
 <?php
-include '/path/to/your/404.html';
+readfile('/path/to/your/404.html');
 exit;
 ```
 
