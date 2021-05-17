@@ -44,3 +44,10 @@ error_page 502 /502.html;
 readfile('/path/to/your/404.html');
 exit;
 ```
+
+# Google Analytics
+如需搭配谷歌分析使用并将访问错误页作为事件记录，您可以使用withGoogleAnalytics目录下版本，并设置正确的GA_MEASUREMENT_ID：
+```bash
+cp ./withGoogleAnalytics/* ./
+sed -i 's/GA_MEASUREMENT_ID/UA-XXXXXXX-1或GA-XXXXX/g' *.html
+```

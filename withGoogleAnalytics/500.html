@@ -1,0 +1,292 @@
+<html>
+    <head>
+        <title>500 INTERNAL SERVER ERROR</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+        <style>
+            .glitch {
+                color: white;
+                position: relative;
+                margin: 0 auto;
+            }
+
+            @keyframes noise-anim {
+                0% {
+                    clip: rect(65px, 9999px, 42px, 0);
+                }
+                5% {
+                    clip: rect(29px, 9999px, 80px, 0);
+                }
+                10% {
+                    clip: rect(67px, 9999px, 44px, 0);
+                }
+                15% {
+                    clip: rect(34px, 9999px, 57px, 0);
+                }
+                20% {
+                    clip: rect(42px, 9999px, 71px, 0);
+                }
+                25% {
+                    clip: rect(98px, 9999px, 45px, 0);
+                }
+                30% {
+                    clip: rect(32px, 9999px, 40px, 0);
+                }
+                35% {
+                    clip: rect(8px, 9999px, 11px, 0);
+                }
+                40% {
+                    clip: rect(5px, 9999px, 37px, 0);
+                }
+                45% {
+                    clip: rect(99px, 9999px, 48px, 0);
+                }
+                50% {
+                    clip: rect(84px, 9999px, 60px, 0);
+                }
+                55% {
+                    clip: rect(45px, 9999px, 72px, 0);
+                }
+                60% {
+                    clip: rect(61px, 9999px, 6px, 0);
+                }
+                65% {
+                    clip: rect(35px, 9999px, 39px, 0);
+                }
+                70% {
+                    clip: rect(74px, 9999px, 3px, 0);
+                }
+                75% {
+                    clip: rect(94px, 9999px, 78px, 0);
+                }
+                80% {
+                    clip: rect(51px, 9999px, 15px, 0);
+                }
+                85% {
+                    clip: rect(52px, 9999px, 84px, 0);
+                }
+                90% {
+                    clip: rect(79px, 9999px, 56px, 0);
+                }
+                95% {
+                    clip: rect(6px, 9999px, 87px, 0);
+                }
+                100% {
+                    clip: rect(95px, 9999px, 35px, 0);
+                }
+            }
+
+            .glitch:after {
+                content: attr(data-text);
+                position: absolute;
+                left: 2px;
+                text-shadow: -1px 0 red;
+                top: 0;
+                color: white;
+                overflow: hidden;
+                clip: rect(0, 900px, 0, 0);
+                animation: noise-anim 2s infinite linear alternate-reverse;
+            }
+
+            @keyframes noise-anim-2 {
+                0% {
+                    clip: rect(44px, 9999px, 55px, 0);
+                }
+                5% {
+                    clip: rect(78px, 9999px, 31px, 0);
+                }
+                10% {
+                    clip: rect(72px, 9999px, 57px, 0);
+                }
+                15% {
+                    clip: rect(44px, 9999px, 48px, 0);
+                }
+                20% {
+                    clip: rect(11px, 9999px, 55px, 0);
+                }
+                25% {
+                    clip: rect(64px, 9999px, 55px, 0);
+                }
+                30% {
+                    clip: rect(3px, 9999px, 86px, 0);
+                }
+                35% {
+                    clip: rect(86px, 9999px, 15px, 0);
+                }
+                40% {
+                    clip: rect(49px, 9999px, 39px, 0);
+                }
+                45% {
+                    clip: rect(6px, 9999px, 31px, 0);
+                }
+                50% {
+                    clip: rect(3px, 9999px, 37px, 0);
+                }
+                55% {
+                    clip: rect(81px, 9999px, 56px, 0);
+                }
+                60% {
+                    clip: rect(11px, 9999px, 50px, 0);
+                }
+                65% {
+                    clip: rect(6px, 9999px, 9px, 0);
+                }
+                70% {
+                    clip: rect(100px, 9999px, 7px, 0);
+                }
+                75% {
+                    clip: rect(20px, 9999px, 69px, 0);
+                }
+                80% {
+                    clip: rect(36px, 9999px, 69px, 0);
+                }
+                85% {
+                    clip: rect(33px, 9999px, 71px, 0);
+                }
+                90% {
+                    clip: rect(10px, 9999px, 45px, 0);
+                }
+                95% {
+                    clip: rect(21px, 9999px, 94px, 0);
+                }
+                100% {
+                    clip: rect(98px, 9999px, 27px, 0);
+                }
+            }
+
+            .glitch:before {
+                content: attr(data-text);
+                position: absolute;
+                left: -2px;
+                text-shadow: 1px 0 blue;
+                top: 0;
+                color: white;
+                overflow: hidden;
+                clip: rect(0, 900px, 0, 0);
+                animation: noise-anim-2 3s infinite linear alternate-reverse;
+            }
+        </style>
+        <style>
+            body {
+                margin: 0;
+                box-sizing: border-box;
+                height: 100%;
+                background-color: #000000;
+                background-image: radial-gradient(#11581E, #041607);
+                font-family: 'VT323', Helvetica, sans-serif;
+                font-size: 1.5rem;
+                font-weight: 300;
+                color: rgba(128, 255, 128, 0.8);
+                text-shadow:
+                    0 0 1ex rgba(51, 255, 51, 1),
+                    0 0 2px rgba(102, 74, 74, 0.8);
+            }
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+            a::before {
+                content: "[";
+            }
+            a::after {
+                content: "]";
+            }
+
+            .overlay {
+                pointer-events: none;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background:
+                    repeating-linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0) 0,
+                    rgba(0, 0, 0, 0.3) 50%,
+                    rgba(0, 0, 0, 0) 100%);
+                background-size: auto 4px;
+                z-index: 99;
+            }
+            .overlay::before {
+                content: "";
+                pointer-events: none;
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(
+                    0deg,
+                    transparent 0%,
+                    rgba(32, 128, 32, 0.2) 2%,
+                    rgba(32, 128, 32, 0.8) 3%,
+                    rgba(32, 128, 32, 0.2) 3%,
+                    transparent 100%);
+                background-repeat: no-repeat;
+                animation: scan 7.5s linear 0s infinite;
+            }
+            @keyframes scan {
+                0% {
+                    background-position: 0 -100vh;
+                }
+                35%, 100% {
+                    background-position: 0 100vh;
+                }
+            }
+
+            .terminal {
+                box-sizing: inherit;
+                position: absolute;
+                height: 100%;
+                width: 1000px;
+                max-width: 100%;
+                padding: 4rem;
+            }
+
+            .output {
+                color: rgba(128, 255, 128, 0.8);
+                text-shadow:
+                    0 0 1px rgba(51, 255, 51, 0.4),
+                    0 0 2px rgba(255, 255, 255, 0.8);
+            }
+            .output::before {
+                content: "> ";
+            }
+
+            .input {
+                color: rgba(192, 255, 192, 0.8);
+                text-shadow:
+                    0 0 1px rgba(51, 255, 51, 0.4),
+                    0 0 2px rgba(255, 255, 255, 0.8);
+            }
+            .input::before {
+                content: "$ ";
+            }
+        </style>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'GA_MEASUREMENT_ID');
+            gtag('event', '500', {
+                'event_label': window.location.href,
+                'event_category': 'httpErrorPage',
+                'non_interaction': true
+            });
+        </script>
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <div class="terminal">
+            <h2>ERROR</h2>
+            <h1 class="glitch" data-text="500 INTERNAL SERVER ERROR">500 INTERNAL SERVER ERROR</h1>
+            <p class="output">内部服务器错误</p>
+            <p class="output">您查找的资源存在问题，因而无法显示</p>
+            <p class="input">返回 <a href="javascript:history.back()">上一页</a> 或访问 <a href="/">首页</a></p>
+        </div>
+    </body>
+</html>
